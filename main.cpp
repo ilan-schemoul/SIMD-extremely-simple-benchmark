@@ -4,10 +4,12 @@
 #include <iostream>
 #include <vector>
 
+// Modify as you like
 #define SIZE_256 3000000
-#define SIZE_32 SIZE_256 * (256 / 32)
-
 #define NUMBER_OF_SUM_RUN 100
+
+// Do not touch
+#define SIZE_32 SIZE_256 * (256 / 32)
 
 struct RegularStruct {
   uint32_t x;
