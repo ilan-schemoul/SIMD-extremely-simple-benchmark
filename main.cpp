@@ -87,8 +87,8 @@ const struct StructOfArrays initStructOfArrays() {
 
   for (uint64_t i = 0; i < SIZE_256; i++) {
     structOfArrays.x_vec[i] = _mm256_loadu_si256((__m256i const *)x_array);
-    structOfArrays.x_vec[i] = _mm256_loadu_si256((__m256i const *)y_array);
-    structOfArrays.x_vec[i] = _mm256_loadu_si256((__m256i const *)z_array);
+    structOfArrays.y_vec[i] = _mm256_loadu_si256((__m256i const *)y_array);
+    structOfArrays.z_vec[i] = _mm256_loadu_si256((__m256i const *)z_array);
   }
 
   return structOfArrays;
