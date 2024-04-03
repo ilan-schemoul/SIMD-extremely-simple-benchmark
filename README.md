@@ -4,7 +4,7 @@ This code compares the performances of AVX-2 versus scalar (regular `for` loops 
 I did not know how to use SIMD but I knew it can really help performances and I also wanted to compare how efficiency of data structures (structure of array vs array of structure) can impact performances. So this is my experimentation to compare data structures and the use of SIMD.
 
 # How to run ?
-`g++ -O2 -march=native a.cpp -o avx && ./avx`
+`g++ -O2 -march=native main.cpp -o avx && ./avx`
 
 You need AVX 2 support. You can customize the values of the macros at the top of the file (`SIZE_256` and `NUMBER_OF_SUM_RUN`)
 
