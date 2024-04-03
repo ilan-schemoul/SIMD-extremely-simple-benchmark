@@ -178,7 +178,7 @@ int main(int argc, char *argv[]) {
 
   std::cout << "Structure of arrays with SIMD" << std::endl
             << "Initialization="
-            << duration_cast<milliseconds>(init_soa_256 - sum_aos).count()
+            << duration_cast<milliseconds>(init_soa_256 - sum_soa_32).count()
             << "ms sum="
             << duration_cast<milliseconds>(sum_soa_256 - init_soa_256).count() << "ms"
             << std::endl << std::endl;
